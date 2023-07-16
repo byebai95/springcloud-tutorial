@@ -5,6 +5,9 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @RefreshScope
 @RestController
 public class TestController {
@@ -12,9 +15,15 @@ public class TestController {
     @Value("${name}")
     private String name;
 
+    @Value("${age:0}")
+    private int age;
+
     @GetMapping
-    public String getInfo(){
+    public Map<String,Object> getInfo(){
         System.out.println("getInfo");
-        return name;
+        Map<String,Object> map = new HashMap<>();
+        map.put("name", name);
+        map.put("age", age);
+        return map;
     }
 }
