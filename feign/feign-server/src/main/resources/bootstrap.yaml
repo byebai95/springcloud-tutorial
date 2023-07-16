@@ -1,6 +1,6 @@
 spring:
   application:
-    name: feign-client
+    name: feign-server
   cloud:
     nacos:
       config:
