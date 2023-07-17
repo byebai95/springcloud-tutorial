@@ -9,18 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>feign</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>feign-client</module>
-        <module>feign-server</module>
-    </modules>
+    <artifactId>springcloud-gateway</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
-
-
 
 </project>
