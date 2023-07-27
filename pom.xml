@@ -13,6 +13,7 @@
         <module>springcloud-nacos</module>
         <module>springcloud-gateway</module>
         <module>springcloud-sentinal</module>
+        <module>springcloud-ribbon</module>
     </modules>
 
     <parent>
