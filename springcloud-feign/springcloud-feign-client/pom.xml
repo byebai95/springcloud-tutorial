@@ -43,6 +43,7 @@
             <version>${feign.version}</version>
         </dependency>
 
+
     </dependencies>
 
 </project>

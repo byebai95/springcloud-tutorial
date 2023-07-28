@@ -18,4 +18,8 @@ spring:
         namespace: dev
         username: nacos
         password: nacos
+    loadbalancer:
+      ribbon:
+        enabled: false
+
 
